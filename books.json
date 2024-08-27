@@ -1,0 +1,84 @@
+{
+  "array": [
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Southern Gothic",
+      "year": 1960,
+      "image": "",
+      "isbn": "0061120081"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "year": 1949,
+      "image": "",
+      "isbn": "0451524934"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Tragedy",
+      "year": 1925,
+      "image": "",
+      "isbn": "0743273567"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "year": 1813,
+      "image": "",
+      "isbn": "0486411844"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Realism",
+      "year": 1951,
+      "image": "",
+      "isbn": "0316769487"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1937,
+      "image": "",
+      "isbn": "0307269981"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "year": 1954,
+      "image": "",
+      "isbn": "0345339738"
+    },
+    {
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genre": "Mystery",
+      "year": 2003,
+      "image": "",
+      "isbn": "0307277674"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fantasy",
+      "year": 1988,
+      "image": "",
+      "isbn": "0062310005"
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "genre": "Southern Gothic",
+      "year": 1939,
+      "image": "",
+      "isbn": "039915034X"
+    }
+  ]
+}
