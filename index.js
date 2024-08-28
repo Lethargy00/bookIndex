@@ -108,6 +108,20 @@ document
     hideForm();
   });
 
+// Add event listener to the cancel button click event.
+document
+  .querySelector("#cancelButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent button click from submitting the form
+
+    // Clear form fields
+    const form = document.getElementById("addBookForm");
+    form.reset();
+
+    // Hide the form
+    hideForm();
+  });
+
 function showForm() {
   const form = document.getElementById("addBookForm");
   const bookList = document.getElementById("bookList");

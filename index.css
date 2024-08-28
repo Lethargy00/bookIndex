@@ -42,6 +42,14 @@ body {
   border-color: #9df5a9;
 }
 
+#cancelButton:hover {
+  border-color: #f59d9d;
+}
+
+#addButton:hover {
+  border-color: #9df5a9;
+}
+
 #bookList {
   position: relative;
   max-height: 80vh;
