@@ -41,6 +41,9 @@ function DisplayBooks(data) {
       book.image || "https://placehold.co/400x600?text=No+Photo&font=roboto";
     bookCard.appendChild(bookImage);
 
+    const bookInfo = document.createElement("div");
+    bookInfo.classList.add("bookInfo");
+
     const bookTitleYearDiv = document.createElement("div");
     bookTitleYearDiv.classList.add("bookTitle");
     const bookTitle = document.createElement("h2");
@@ -50,7 +53,7 @@ function DisplayBooks(data) {
     const bookYear = document.createElement("h2");
     bookYear.textContent = `(${book.year})`;
     bookTitleYearDiv.appendChild(bookYear);
-    bookCard.appendChild(bookTitleYearDiv);
+    bookInfo.appendChild(bookTitleYearDiv);
 
     const bookAuthorGenreISBNDiv = document.createElement("div");
     const bookAuthor = document.createElement("p");
@@ -64,7 +67,9 @@ function DisplayBooks(data) {
     const bookISBN = document.createElement("p");
     bookISBN.textContent = `ISBN: ${book.isbn}`;
     bookAuthorGenreISBNDiv.appendChild(bookISBN);
-    bookCard.appendChild(bookAuthorGenreISBNDiv);
+    bookInfo.appendChild(bookAuthorGenreISBNDiv);
+
+    bookCard.appendChild(bookInfo);
 
     // Append the book card to the book list
     bookList.appendChild(bookCard);
