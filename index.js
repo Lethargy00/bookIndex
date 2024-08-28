@@ -105,10 +105,23 @@ document
     form.reset();
 
     // Hide the form
-    form.style.display = "none";
+    hideForm();
   });
 
 function showForm() {
   const form = document.getElementById("addBookForm");
-  form.style.display = "block";
+  const bookList = document.getElementById("bookList");
+  const body = document.body;
+  bookList.style.filter = "blur(5px)";
+  body.style.pointerEvents = "none";
+  form.style.display = "flex";
+}
+
+function hideForm() {
+  const form = document.getElementById("addBookForm");
+  const bookList = document.getElementById("bookList");
+  const body = document.body;
+  bookList.style.filter = "none";
+  body.style.pointerEvents = "auto";
+  form.style.display = "none";
 }
