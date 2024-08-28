@@ -37,7 +37,8 @@ function DisplayBooks(data) {
     });
 
     const bookImage = document.createElement("img");
-    bookImage.src = book.image;
+    bookImage.src =
+      book.image || "https://placehold.co/400x600?text=No+Photo&font=roboto";
     bookCard.appendChild(bookImage);
 
     const bookTitleYearDiv = document.createElement("div");
@@ -68,4 +69,46 @@ function DisplayBooks(data) {
     // Append the book card to the book list
     bookList.appendChild(bookCard);
   });
+}
+
+// Add event listener tot he form submit event.
+document
+  .querySelector("#addBookForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const title = document.getElementById("title").value;
+    const year = document.getElementById("year").value;
+    const author = document.getElementById("author").value;
+    const genre = document.getElementById("genre").value;
+    const isbn = document.getElementById("isbn").value;
+    const image = document.getElementById("image").value;
+
+    // Add book to the list in localStorage as a JSON string.
+    const booksData = JSON.parse(localStorage.getItem("booksData")) || {
+      array: [],
+    };
+    booksData.array.push({
+      id: Date.now(),
+      title,
+      year,
+      author,
+      genre,
+      isbn,
+      image: image || "https://placehold.co/400x600?text=No+Photo&font=roboto",
+    });
+    localStorage.setItem("booksData", JSON.stringify(booksData));
+
+    // Clear form fields
+    const form = document.getElementById("addBookForm");
+    form.reset();
+
+    // Hide the form
+    form.style.display = "none";
+  });
+
+function showForm() {
+  const form = document.getElementById("addBookForm");
+  form.style.display = "block";
 }

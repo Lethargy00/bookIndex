@@ -1,0 +1,29 @@
+/* Add CSS styles for the book details */
+.book-details {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-details img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
