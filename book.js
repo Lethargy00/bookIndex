@@ -11,16 +11,26 @@ if (booksData) {
   // Find the book in the data
   const book = data.array.find((book) => book.id === parseInt(bookId));
 
+  // prettier-ignore
   if (book) {
-    // Populate the book details on the page
-    document.getElementById("bookImage").src = book.image;
-    document.getElementById("bookTitle").textContent = book.title;
-    document.getElementById(
-      "bookAuthor"
-    ).textContent = `Author: ${book.author}`;
-    document.getElementById("bookGenre").textContent = `Genre: ${book.genre}`;
-    document.getElementById("bookYear").textContent = `Year: ${book.year}`;
-    document.getElementById("bookISBN").textContent = `ISBN: ${book.isbn}`;
+    const body = document.body;
+    body.innerHTML = `
+    <a class="back" href="./">Back</a>
+    <div class="bookCard" >
+      <img src="${book.image || 'https://placehold.co/400x600?text=No+Photo&font=roboto'}" alt="Book Cover">
+      <div class="bookInfo">
+        <div class="bookTitle">
+          <h2>${book.title}</h2>
+          <h2>(${book.year})</h2>
+        </div>
+        <div>
+          <p>Author: ${book.author}</p>
+          <p>Genre: ${book.genre}</p>
+          <p>ISBN: ${book.isbn}</p>
+        </div>
+      </div>
+    </div>
+  `;
   } else {
     // Handle the case when the book ID is not found
     console.error("Book not found");

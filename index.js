@@ -28,6 +28,9 @@ if (booksData) {
 function DisplayBooks(data) {
   const bookList = document.getElementById("bookList");
 
+  // Clear the book list
+  bookList.innerHTML = "";
+
   bookList.innerHTML = data.array.map((book) => `
     <div class="bookCard" onclick="window.location.href = 'book.html?id=${book.id}'" >
       <img src="${book.image || 'https://placehold.co/400x600?text=No+Photo&font=roboto'}" alt="Book Cover">
@@ -50,10 +53,6 @@ function DisplayBooks(data) {
 function updateBookList() {
   // Parse the books data from localStorage
   const data = JSON.parse(localStorage.getItem("booksData"));
-
-  // Clear the book list
-  const bookList = document.getElementById("bookList");
-  bookList.innerHTML = "";
 
   // Re-process the books data
   DisplayBooks(data);

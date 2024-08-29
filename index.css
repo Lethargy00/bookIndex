@@ -39,7 +39,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  height: 60%;
   padding: 15px;
   border-radius: 15px;
   gap: 10px;
@@ -58,6 +57,10 @@ body {
 #addBookForm > input:focus {
   outline: none;
   border-color: #9df5a9;
+}
+
+#cancelButton:focus {
+  border-color: #f59d9d !important;
 }
 
 #cancelButton:hover {
