@@ -2,40 +2,46 @@
 const urlParams = new URLSearchParams(window.location.search);
 const bookId = urlParams.get("id");
 
-// Check if the books data is already in localStorage
-const booksData = localStorage.getItem("booksData");
-if (booksData) {
-  // Parse the books data from localStorage
-  const data = JSON.parse(booksData);
+// Function to fetch books from the API
+async function fetchBook() {
+  try {
+    const response = await fetch(`http://localhost:5010/api/book/${bookId}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching book data:", error);
+  }
+}
 
-  // Find the book in the data
-  const book = data.array.find((book) => book.id === parseInt(bookId));
-
-  // prettier-ignore
-  if (book) {
+// Fetch the book data from the API
+fetchBook().then((data) => {
+  if (data) {
     const body = document.body;
     body.innerHTML = `
-    <a class="back" href="./">Back</a>
-    <div class="bookCard" >
-      <img src="${book.image || 'https://placehold.co/400x600?text=No+Photo&font=roboto'}" alt="Book Cover">
-      <div class="bookInfo">
-        <div class="bookTitle">
-          <h2>${book.title}</h2>
-          <h2>(${book.year})</h2>
-        </div>
-        <div>
-          <p>Author: ${book.author}</p>
-          <p>Genre: ${book.genre}</p>
-          <p>ISBN: ${book.isbn}</p>
+      <a class="back" href="./">Back</a>
+      <div class="bookCard" >
+        <img src="${
+          data.imageURL ||
+          "https://placehold.co/400x600?text=No+Photo&font=roboto"
+        }" alt="Book Cover">
+        <div class="bookInfo">
+          <div class="bookTitle">
+            <h2>${data.title}</h2>
+            <h2>(${data.releaseDate})</h2>
+          </div>
+          <div>
+            <p>Author: ${data.author}</p>
+            <p>Genre: ${data.genre}</p>
+            <p>ISBN: ${data.isbn}</p>
+          </div>
         </div>
       </div>
-    </div>
-  `;
+    `;
   } else {
-    // Handle the case when the book ID is not found
-    console.error("Book not found");
+    const body = document.body;
+    body.innerHTML = `
+      <a class="back" href="./">Back</a>
+      <p>Book not found</p>
+    `;
   }
-} else {
-  // Handle the case when the books data is not available in localStorage
-  console.error("Books data not found in localStorage");
-}
+});

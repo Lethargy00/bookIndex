@@ -1,93 +1,83 @@
 {
   "array": [
     {
-      "id": 1,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "genre": "Southern Gothic",
-      "year": 1960,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/220px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+      "releaseDate": 1960,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/220px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
       "isbn": "0061120081"
     },
     {
-      "id": 2,
       "title": "1984",
       "author": "George Orwell",
       "genre": "Dystopian",
-      "year": 1949,
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-EylxpuYnDQk%2FXjHcIaEpoeI%2FAAAAAAABaXI%2F5fR_SfCwkaQFt5TMYhdiJWKf3cSZakEXwCLcBGAsYHQ%2Fs640%2F1984_First_Edition_Cover.jpeg&f=1&nofb=1&ipt=25a866be0a9c8e52c13bde04c12a0b3c59b72ca277ed47c0ddd42aade69a682e&ipo=images",
+      "releaseDate": 1949,
+      "imageURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-EylxpuYnDQk%2FXjHcIaEpoeI%2FAAAAAAABaXI%2F5fR_SfCwkaQFt5TMYhdiJWKf3cSZakEXwCLcBGAsYHQ%2Fs640%2F1984_First_Edition_Cover.jpeg&f=1&nofb=1&ipt=25a866be0a9c8e52c13bde04c12a0b3c59b72ca277ed47c0ddd42aade69a682e&ipo=images",
       "isbn": "0451524934"
     },
     {
-      "id": 3,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": "Tragedy",
-      "year": 1925,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
+      "releaseDate": 1925,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/220px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
       "isbn": "0743273567"
     },
     {
-      "id": 4,
       "title": "Pride and Prejudice",
       "author": "Jane Austen",
       "genre": "Romance",
-      "year": 1813,
-      "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbeflona.blogs.uv.es%2Ffiles%2F2013%2F05%2Fpride_and_prejudice_large.jpg&f=1&nofb=1&ipt=57d378973a269dd4f6b96400558dcf21277f560a5801e3e5ed9d2a359b76557b&ipo=images",
+      "releaseDate": 1813,
+      "imageURL": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbeflona.blogs.uv.es%2Ffiles%2F2013%2F05%2Fpride_and_prejudice_large.jpg&f=1&nofb=1&ipt=57d378973a269dd4f6b96400558dcf21277f560a5801e3e5ed9d2a359b76557b&ipo=images",
       "isbn": "0486411844"
     },
     {
-      "id": 5,
       "title": "The Catcher in the Rye",
       "author": "J.D. Salinger",
       "genre": "Realism",
-      "year": 1951,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg/220px-The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
+      "releaseDate": 1951,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg/220px-The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
       "isbn": "0316769487"
     },
     {
-      "id": 6,
       "title": "The Hobbit",
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
-      "year": 1937,
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
+      "releaseDate": 1937,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
       "isbn": "0307269981"
     },
     {
-      "id": 7,
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
-      "year": 1954,
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif/220px-First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif",
+      "releaseDate": 1954,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif/220px-First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif",
       "isbn": "0345339738"
     },
     {
-      "id": 8,
       "title": "The Da Vinci Code",
       "author": "Dan Brown",
       "genre": "Mystery",
-      "year": 2003,
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/DaVinciCode.jpg/220px-DaVinciCode.jpg",
+      "releaseDate": 2003,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/DaVinciCode.jpg/220px-DaVinciCode.jpg",
       "isbn": "0307277674"
     },
     {
-      "id": 9,
       "title": "The Alchemist",
       "author": "Paulo Coelho",
       "genre": "Fantasy",
-      "year": 1988,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/TheAlchemist.jpg/220px-TheAlchemist.jpg",
+      "releaseDate": 1988,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/TheAlchemist.jpg/220px-TheAlchemist.jpg",
       "isbn": "0062310005"
     },
     {
-      "id": 10,
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
       "genre": "Southern Gothic",
-      "year": 1939,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg/220px-The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg",
+      "releaseDate": 1939,
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg/220px-The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg",
       "isbn": "039915034X"
     }
   ]
