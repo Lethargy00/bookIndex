@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Index</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body class="blur-background">
@@ -15,6 +15,7 @@
     </div>
 
     <form id="addBookForm" style="display: none;">
+        <input type="hidden" id="bookId" value="">
         <label for="title"></label>
         <input type="text" id="title" name="title" placeholder="Title" required>
         <label for="author"></label>
@@ -28,7 +29,7 @@
         <label for="image"></label>
         <input type="text" id="imageURL" name="imageURL" placeholder="Image URL">
         <input type="button" id="cancelButton" value="Cancel">
-        <input type="submit" id="addButton" value="Add Book">
+        <input type="submit" id="addButton" value="Submit">
     </form>
     <div id="bookList"></div>
 

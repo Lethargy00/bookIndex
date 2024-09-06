@@ -40,7 +40,13 @@ namespace api.Repository
                 return null;
             }
 
-            existingBook = bookUpdate;
+            existingBook.Title = bookUpdate.Title;
+            existingBook.Author = bookUpdate.Author;
+            existingBook.Genre = bookUpdate.Genre;
+            existingBook.ReleaseDate = bookUpdate.ReleaseDate;
+            existingBook.ImageURL = bookUpdate.ImageURL;
+            existingBook.ISBN = bookUpdate.ISBN;
+
 
             await _context.SaveChangesAsync();
 
